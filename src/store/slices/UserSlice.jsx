@@ -12,8 +12,9 @@ const UserSlices = createSlice({
             state.splice(action.payload, 1);
             // console.log(action.payload);
         },
-        DelateUsers: (state, action) =>{
-            
+        delateUsers: () =>{
+            return [];
+            // console.log('delete');
         }
     }
 })
@@ -21,4 +22,4 @@ const UserSlices = createSlice({
 
 export default UserSlices.reducer;
 
-export const {addUser, removeUser, DelateUsers} = UserSlices.actions; 
+export const {addUser, removeUser, delateUsers} = UserSlices.actions; 
